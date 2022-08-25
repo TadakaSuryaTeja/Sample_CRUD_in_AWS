@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "9d5f1e31-83c3-4061-b67a-00aa147c2aa7",
+		"name": "surya_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17409383"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/product?id=001",
+							"protocol": "https",
+							"host": [
+								"vjjmczky5f",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"surya_api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"004\",\n    \"Color\":\"white\",\n    \"model\":\"Some new model\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/product",
+							"protocol": "https",
+							"host": [
+								"vjjmczky5f",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"surya_api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/product",
+							"protocol": "https",
+							"host": [
+								"vjjmczky5f",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"surya_api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch_product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"002\",\n    \"updateKey\": \"Cost\",\n    \"UpdateValue\": \"50k\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/product",
+							"protocol": "https",
+							"host": [
+								"vjjmczky5f",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"surya_api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get_products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/products",
+							"protocol": "https",
+							"host": [
+								"vjjmczky5f",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"surya_api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "token",
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vjjmczky5f.execute-api.us-east-1.amazonaws.com/surya_api/health",
+					"protocol": "https",
+					"host": [
+						"vjjmczky5f",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"surya_api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
